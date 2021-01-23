@@ -11,6 +11,6 @@ class MainViewModel(): ViewModel() {
     
     fun loadData(username: String){
         val rep = AppRepository()
-        repos.value = rep.loadGitHubRepositories(username)
+        rep.loadGitHubRepositories(username).subscribe{repos.value = it}
     }
 }
