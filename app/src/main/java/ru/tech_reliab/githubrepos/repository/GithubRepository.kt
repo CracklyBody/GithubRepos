@@ -15,18 +15,6 @@ class GithubRepository {
     fun loadRepositories(username: String): Observable<List<UserRepository>> {
         val apiService: GithubRepos =
             APIClient.retrofit.create(GithubRepos::class.java)
-
-
-//        val repos = call.enqueue(object : Callback<List<UserRepository>> {
-//            override fun onResponse(call: Call<List<UserRepository>>, response: Response<List<UserRepository>>) {
-//                Log.d("COMPLETE!",response.body()!![0].name)
-//            }
-//
-//            override fun onFailure(call: Call<List<UserRepository>>, t: Throwable) {
-//                Log.d("ERROR!",t.stackTraceToString())
-//            }
-//        })
-
         return apiService.getRepo(username)
     }
 }
