@@ -1,9 +1,6 @@
 package ru.tech_reliab.githubrepos.repository
 
-import android.util.Log
 import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import ru.tech_reliab.githubrepos.model.UserRepository
 import ru.tech_reliab.githubrepos.service.APIClient
 import ru.tech_reliab.githubrepos.service.GithubRepos
