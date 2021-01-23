@@ -12,10 +12,8 @@ import ru.tech_reliab.githubrepos.databinding.ActivityMainBinding
 import ru.tech_reliab.githubrepos.databinding.ListItemRepositoryBinding
 import ru.tech_reliab.githubrepos.model.UserRepository
 
-class RepositoryAdapter {
-}
-class ReposAdapter(repos: List<UserRepository>) :
-    RecyclerView.Adapter<ReposAdapter.ReposViewHolder>() {
+class RepositoryAdapter(repos: List<UserRepository>) :
+    RecyclerView.Adapter<RepositoryAdapter.ReposViewHolder>() {
     var repos: List<UserRepository> = listOf()
 
     fun refresh(repos: List<UserRepository>) {
